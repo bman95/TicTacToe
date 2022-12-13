@@ -18,19 +18,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         currentPlayer.text = "It's \(model.currentPlayer)'s turn!"
       
-    
     }
     
-    
     @IBAction func boardButtonPressed(_ button: BoardButton) {
-        print("row \(button.row) at column \(button.col)")
         model.spacePressed(button, model.currentPlayer)
         currentPlayer.text = "It's \(model.currentPlayer)'s turn!"
-        model.gameStatus(button, gameBoardSpaces)
+        model.gameStatus(button, gameBoardSpaces, currentPlayer)
         
-        }
-        
-
+    }
+    
     @IBAction func newGameStarted(_ sender: UIButton) {
         model.newGame(gameBoardSpaces)
         currentPlayer.text = "It's \(model.currentPlayer)'s turn!"
