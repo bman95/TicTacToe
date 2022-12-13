@@ -175,34 +175,46 @@
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZG-hK-gU9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-Iw-5F4">
-                                <rect key="frame" x="20" y="514" width="374" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-Iw-5F4">
+                                <rect key="frame" x="20" y="514" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-6d-oq2">
+                                <rect key="frame" x="154" y="594" width="108" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Game"/>
+                                <connections>
+                                    <action selector="newGameStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAz-WV-R3N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QvH-q3-S1q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45.5" id="0b6-KH-7EX"/>
+                            <constraint firstItem="fBs-Iw-5F4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Acz-fn-6Ol"/>
                             <constraint firstItem="QvH-q3-S1q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.411272" id="B4e-OF-iVE"/>
                             <constraint firstItem="QvH-q3-S1q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="FDo-LR-vWF"/>
+                            <constraint firstItem="fBs-Iw-5F4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KhE-pa-caI"/>
+                            <constraint firstItem="fBs-Iw-5F4" firstAttribute="top" secondItem="QvH-q3-S1q" secondAttribute="bottom" constant="52" id="gxJ-RN-3pd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fBs-Iw-5F4" secondAttribute="trailing" constant="20" id="snj-gi-ZuM"/>
                             <constraint firstItem="QvH-q3-S1q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zAl-QK-ti8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentPlayer" destination="fBs-Iw-5F4" id="7ib-Eu-hs0"/>
-                        <outletCollection property="gameBoardSpaceID" destination="0UQ-mL-gzG" collectionClass="NSMutableArray" id="0fm-hI-iFi"/>
-                        <outletCollection property="gameBoardSpaceID" destination="tab-yt-D1f" collectionClass="NSMutableArray" id="FSv-Nq-CDb"/>
-                        <outletCollection property="gameBoardSpaceID" destination="LAa-85-W4e" collectionClass="NSMutableArray" id="frv-7a-r2J"/>
-                        <outletCollection property="gameBoardSpaceID" destination="a3G-Z8-mcf" collectionClass="NSMutableArray" id="NvA-QM-Q1h"/>
-                        <outletCollection property="gameBoardSpaceID" destination="h63-ja-nDo" collectionClass="NSMutableArray" id="BD6-K1-rZb"/>
-                        <outletCollection property="gameBoardSpaceID" destination="gbP-do-IgA" collectionClass="NSMutableArray" id="eOF-UO-1ZC"/>
-                        <outletCollection property="gameBoardSpaceID" destination="o9u-pc-X4p" collectionClass="NSMutableArray" id="BbH-mO-Khl"/>
-                        <outletCollection property="gameBoardSpaceID" destination="Q29-EB-7YE" collectionClass="NSMutableArray" id="Yek-wO-oBz"/>
-                        <outletCollection property="gameBoardSpaceID" destination="kQz-mw-TaY" collectionClass="NSMutableArray" id="lta-Ww-wIY"/>
+                        <outletCollection property="gameBoardSpaces" destination="0UQ-mL-gzG" collectionClass="NSMutableArray" id="0fm-hI-iFi"/>
+                        <outletCollection property="gameBoardSpaces" destination="tab-yt-D1f" collectionClass="NSMutableArray" id="FSv-Nq-CDb"/>
+                        <outletCollection property="gameBoardSpaces" destination="LAa-85-W4e" collectionClass="NSMutableArray" id="frv-7a-r2J"/>
+                        <outletCollection property="gameBoardSpaces" destination="a3G-Z8-mcf" collectionClass="NSMutableArray" id="NvA-QM-Q1h"/>
+                        <outletCollection property="gameBoardSpaces" destination="h63-ja-nDo" collectionClass="NSMutableArray" id="BD6-K1-rZb"/>
+                        <outletCollection property="gameBoardSpaces" destination="gbP-do-IgA" collectionClass="NSMutableArray" id="eOF-UO-1ZC"/>
+                        <outletCollection property="gameBoardSpaces" destination="o9u-pc-X4p" collectionClass="NSMutableArray" id="BbH-mO-Khl"/>
+                        <outletCollection property="gameBoardSpaces" destination="Q29-EB-7YE" collectionClass="NSMutableArray" id="Yek-wO-oBz"/>
+                        <outletCollection property="gameBoardSpaces" destination="kQz-mw-TaY" collectionClass="NSMutableArray" id="lta-Ww-wIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

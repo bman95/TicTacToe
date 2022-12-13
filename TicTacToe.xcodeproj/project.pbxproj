@@ -13,7 +13,7 @@
 		406848EC2947FAA6008A761C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406848EA2947FAA6008A761C /* Main.storyboard */; };
 		406848EE2947FAA8008A761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406848ED2947FAA8008A761C /* Assets.xcassets */; };
 		406848F12947FAA8008A761C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406848EF2947FAA8008A761C /* LaunchScreen.storyboard */; };
-		406848FB2947FADE008A761C /* BoardButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406848FA2947FADE008A761C /* BoardButtons.swift */; };
+		406848FB2947FADE008A761C /* BoardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406848FA2947FADE008A761C /* BoardButton.swift */; };
 		406848FD2947FB2A008A761C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406848FC2947FB2A008A761C /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		406848ED2947FAA8008A761C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406848F02947FAA8008A761C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406848F22947FAA8008A761C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		406848FA2947FADE008A761C /* BoardButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardButtons.swift; sourceTree = "<group>"; };
+		406848FA2947FADE008A761C /* BoardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardButton.swift; sourceTree = "<group>"; };
 		406848FC2947FB2A008A761C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				406848E42947FAA6008A761C /* AppDelegate.swift */,
-				406848FA2947FADE008A761C /* BoardButtons.swift */,
+				406848FA2947FADE008A761C /* BoardButton.swift */,
 				406848E62947FAA6008A761C /* SceneDelegate.swift */,
 				406848E82947FAA6008A761C /* ViewController.swift */,
 				406848FC2947FB2A008A761C /* GameModel.swift */,
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				406848FD2947FB2A008A761C /* GameModel.swift in Sources */,
-				406848FB2947FADE008A761C /* BoardButtons.swift in Sources */,
+				406848FB2947FADE008A761C /* BoardButton.swift in Sources */,
 				406848E92947FAA6008A761C /* ViewController.swift in Sources */,
 				406848E52947FAA6008A761C /* AppDelegate.swift in Sources */,
 				406848E72947FAA6008A761C /* SceneDelegate.swift in Sources */,
